@@ -1,0 +1,46 @@
+.newmain {
+  display: none;
+  padding-top: 30px;
+  justify-content: center;
+}
+.heading {
+  padding-left: 20px;
+}
+select {
+  outline: 0;
+  width: 100%;
+  height: 50%;
+  color: black;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.select {
+  position: relative;
+  display: block;
+  line-height: 1.5;
+  overflow: hidden;
+  border-radius: 0.25em;
+  padding-bottom: 10px;
+}
+.buttonalign {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pinkbuttonn {
+  background-color: #f1356d;
+  border: none;
+  color: white;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.pinkbuttonn:active {
+  background-color: #f1289f;
+}
+.border {
+  width: 100%;
+  box-sizing: border-box;
+}

@@ -1,0 +1,10 @@
+.main {
+  display: block;
+  padding-top: 30px;
+  text-decoration: none;
+  font-size: larger;
+}
+.listt {
+  color: #f1356d;
+  font-weight: bolder;
+}

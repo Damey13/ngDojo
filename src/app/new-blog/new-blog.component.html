@@ -1,0 +1,36 @@
+<div class="cmain">
+  <div class="heading">
+    <h2>Add a new blog</h2>
+  </div>
+  <form #noteForm="ngForm" (ngSubmit)="onSubmit(noteForm)">
+    <label for="blogname">Blog title:</label><br />
+    <input
+      class="border"
+      type="text"
+      id="fname"
+      name="title"
+      [(ngModel)]="note.title"
+    />
+    <br /><br />
+    <label for="blogbody">Blog body:</label><br />
+    <textarea
+      class="border"
+      name="body"
+      [(ngModel)]="note.body"
+      id="fbody"
+    ></textarea>
+    <br /><br />
+    <label for="blogauthor">Blog Author:</label><br />
+    <select class="border" id="author" name="author" [(ngModel)]="note.author">
+      <br />
+      <option value="mario" selected>Mario</option>
+      <option value="super">Super</option>
+      <option value="dump">Dump</option>
+    </select>
+    <br />
+    <br />
+    <div class="buttonalign">
+      <input type="submit" value="Add Blog" class="pinkbuttonn" />
+    </div>
+  </form>
+</div>

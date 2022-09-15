@@ -1,0 +1,13 @@
+<div class="main" id="main">
+  <h3>All Blogs!</h3>
+  <ul id="blogs-list">
+    <li
+      *ngFor="let note of notes; index as i"
+      routerLink="{{ i }}"
+      (delete)="deleteNote(i)"
+    >
+      <p class="listt">{{ note.title }}</p>
+      <p>written by {{ note.author }}</p>
+    </li>
+  </ul>
+</div>
